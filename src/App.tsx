@@ -20,6 +20,7 @@ import {
   Coffee,
   Code2
 } from "lucide-react";
+import myPhoto from "../utils/img.jpg";
 
 // --- Terminal Resume Data ---
 const RESUME_TEXT = `
@@ -139,7 +140,7 @@ export default function App() {
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-neon p-1 overflow-hidden bg-black shadow-[8px_8px_0px_#D4FF00] transition-all duration-300 group-hover:translate-x-[4px] group-hover:translate-y-[4px] group-hover:shadow-[2px_2px_0px_#D4FF00]">
                   {/* TODO: Replace this src with your actual photo URL or imported image */}
                   <img 
-                    src="utils\20210101_123418.jpg" 
+                    src={myPhoto} 
                     alt="Deep - Profile Placeholder" 
                     className="w-full h-full object-cover rounded-full grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                     referrerPolicy="no-referrer"
@@ -147,7 +148,6 @@ export default function App() {
                 </div>
                 {/* Instruction Badge */}
                 <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-black font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full whitespace-nowrap border-2 border-black z-20 group-hover:bg-neon transition-colors">
-                  Your Photo Here
                 </div>
               </div>
             </div>
