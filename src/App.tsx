@@ -139,7 +139,7 @@ export default function App() {
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-neon p-1 overflow-hidden bg-black shadow-[8px_8px_0px_#D4FF00] transition-all duration-300 group-hover:translate-x-[4px] group-hover:translate-y-[4px] group-hover:shadow-[2px_2px_0px_#D4FF00]">
                   {/* TODO: Replace this src with your actual photo URL or imported image */}
                   <img 
-                    src="https://picsum.photos/seed/deepmle/400/400?grayscale" 
+                    src="utils\20210101_123418.jpg" 
                     alt="Deep - Profile Placeholder" 
                     className="w-full h-full object-cover rounded-full grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                     referrerPolicy="no-referrer"
@@ -250,11 +250,11 @@ export default function App() {
 
             {/* Quick Contact Banners */}
             <div className="grid grid-cols-2 gap-6 h-40">
-              <a href="mailto:dt1656@srmist.edu.in" className="bg-card border border-white/10 rounded-[2rem] flex flex-col items-center justify-center gap-3 hover:border-neon hover:text-neon transition-colors group">
+              <a href="mailto:deepak_tripathy@rocketmail.com" className="bg-card border border-white/10 rounded-[2rem] flex flex-col items-center justify-center gap-3 hover:border-neon hover:text-neon transition-colors group">
                  <Mail size={32} className="group-hover:scale-110 transition-transform" />
                  <span className="font-mono text-sm font-bold uppercase tracking-widest">Email</span>
               </a>
-              <a href="https://github.com" target="_blank" className="bg-white text-black rounded-[2rem] flex flex-col items-center justify-center gap-3 hover:bg-neon transition-colors group">
+              <a href="https://github.com/Deepakktripathy" target="_blank" className="bg-white text-black rounded-[2rem] flex flex-col items-center justify-center gap-3 hover:bg-neon transition-colors group">
                  <Github size={32} className="group-hover:scale-110 transition-transform" />
                  <span className="font-mono text-sm font-bold uppercase tracking-widest">GitHub</span>
               </a>
