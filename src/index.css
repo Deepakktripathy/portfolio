@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-neon: #D4FF00;
+  --color-dark: #050505;
+  --color-card: #111111;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-display antialiased selection:bg-neon selection:text-black overflow-x-hidden;
+  }
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+/* Custom Scrollbar for terminal */
+.terminal-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.terminal-scroll::-webkit-scrollbar-track {
+  background: #111; 
+}
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #333; 
+}
+.terminal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #D4FF00; 
+}
